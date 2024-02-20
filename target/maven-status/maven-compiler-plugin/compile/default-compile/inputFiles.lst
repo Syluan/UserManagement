@@ -1,0 +1,10 @@
+D:\workspace\user_Management\src\main\java\fpt\fa\repository\KhachHangRepository.java
+D:\workspace\user_Management\src\main\java\fpt\fa\entities\KhachHang.java
+D:\workspace\user_Management\src\main\java\fpt\fa\service\impl\KhachHangServiceImpl.java
+D:\workspace\user_Management\src\main\java\fpt\fa\controller\ErrorController.java
+D:\workspace\user_Management\src\main\java\fpt\fa\entities\Role.java
+D:\workspace\user_Management\src\main\java\fpt\fa\entities\User.java
+D:\workspace\user_Management\src\main\java\fpt\fa\service\KhachHangService.java
+D:\workspace\user_Management\src\main\java\fpt\fa\DTO\ShowDTO.java
+D:\workspace\user_Management\src\main\java\fpt\fa\controller\DTOController.java
+D:\workspace\user_Management\src\main\java\fpt\fa\controller\KhachHangController.java

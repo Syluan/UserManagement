@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!-- Base Template START -->
+	<definition name="base.template"
+		template="/WEB-INF/templates/templates_layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="head"
+			value="/WEB-INF/view/layout/head.jsp" />
+		<put-attribute name="header"
+			value="/WEB-INF/view/layout/header.jsp" />
+		<put-attribute name="main-content" value="" />
+		<put-attribute name="sidebar"
+			value="/WEB-INF/view/layout/sidebar.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/view/layout/footer.jsp" />
+		<put-attribute name="script"
+			value="/WEB-INF/view/layout/javascript.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+	<!-- Base Template END -->
+	<!-- Brand Page START -->
+	<definition name="homePage" extends="base.template">
+		<put-attribute name="title" value="home" />
+		<put-attribute name="main-content" value="" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+		</put-list-attribute>
+		<!-- ... -->
+	</definition>
+
+	<definition name="default" extends="homePage" />
+
+
+	<definition name="create/user" extends="base.template">
+		<put-attribute name="title" value="THEM user" />
+		<put-attribute name="main-content"
+			value="/WEB-INF/view/user/form_create_user.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+		</put-list-attribute>
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/resources/js/add-user.js"/>
+		</put-list-attribute>
+	</definition>
+	<definition name="listUser" extends="base.template">
+		<put-attribute name="title" value="LIST user" />
+		<put-attribute name="main-content"
+			value="/WEB-INF/view/user/form_list_user.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<!-- <add-attribute value="/resources/css/color.css" /> -->
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+	<definition name="updateUser" extends="base.template">
+		<put-attribute name="title" value="UPDATE user" />
+		<put-attribute name="main-content"
+			value="/WEB-INF/view/user/form_update_user.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<!-- <add-attribute value="/resources/css/color.css" /> -->
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+
+	<definition name="create/dichVu" extends="base.template">
+		<put-attribute name="title" value="THEM DICH VU" />
+		<put-attribute name="main-content"
+			value="/WEB-INF/view/dichVu/form_create_dichvu.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+	<definition name="listDichVu" extends="base.template">
+		<put-attribute name="title" value="LIST DICHVU" />
+		<put-attribute name="main-content"
+			value="/WEB-INF/view/dichVu/form_list_dichvu.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<!-- <add-attribute value="/resources/css/color.css" /> -->
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="updateDichVu" extends="base.template">
+		<put-attribute name="title" value="UPDATE DICH VU" />
+		<put-attribute name="main-content"
+			value="/WEB-INF/view/dichVu/form_update_dichvu.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<!-- <add-attribute value="/resources/css/color.css" /> -->
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="errorPage"
+		template="/WEB-INF/view/error/error-page.jsp">
+		<put-attribute name="title" value="Error Page" />
+	</definition>
+	
+	<definition name="listSuDungMay" extends="base.template">
+		<put-attribute name="title" value="UPDATE DICH VU" />
+		<put-attribute name="main-content"
+			value="/WEB-INF/view/sudungmay/form_list_sudungmay.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<!-- <add-attribute value="/resources/css/color.css" /> -->
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+	<definition name="create/suDungMay" extends="base.template">
+		<put-attribute name="title" value="thêm DICH VU" />
+		<put-attribute name="main-content"
+			value="/WEB-INF/view/sudungmay/form_create_sudungmay.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<!-- <add-attribute value="/resources/css/color.css" /> -->
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+	
+		<definition name="listSuDungDichVu" extends="base.template">
+		<put-attribute name="title" value="list SU DUNG DICH VU" />
+		<put-attribute name="main-content"
+			value="/WEB-INF/view/sudungdichvu/form_list_sudungdichvu.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<!-- <add-attribute value="/resources/css/color.css" /> -->
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+	<definition name="create/suDungDichVu" extends="base.template">
+		<put-attribute name="title" value="thêm su dung DICH VU" />
+		<put-attribute name="main-content"
+			value="/WEB-INF/view/sudungdichvu/form_create_sudungdichvu.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<!-- <add-attribute value="/resources/css/color.css" /> -->
+		</put-list-attribute>
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute value="/resources/js/add-khachHang.js"/>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="listAll" extends="base.template">
+		<put-attribute name="title" value="dto" />
+		<put-attribute name="main-content"
+			value="/WEB-INF/view/allshow/form_list_show.jsp" />
+		<put-list-attribute name="stylesheets"
+			inherit="true">
+			<!-- <add-attribute value="/resources/css/color.css" /> -->
+		</put-list-attribute>
+		<put-list-attribute name="javascripts"
+			inherit="true">
+		</put-list-attribute>
+	</definition>
+	
+	<!-- Brand Page END -->
+</tiles-definitions>
