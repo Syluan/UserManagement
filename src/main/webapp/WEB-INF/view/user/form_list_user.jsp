@@ -44,7 +44,7 @@
 								<c:if test="${not empty fromListUser}">
 									<c:forEach items="${fromListUser}" var="user">
 										<tr>
-											<td>${user.ho }${user.ten}</td>
+											<td>${user.ho } ${user.ten}</td>
 											<td>${user.donVi}</td>
 											<td>${user.role.roleName}</td>
 
